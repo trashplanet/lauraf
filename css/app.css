@@ -98,6 +98,9 @@ section#services .services-text {
 section#services .title {
 	background-color: #E0E0E0;
 }
+section#services .title h3 {
+	padding: .618rem;
+}
 section#services .description {
 	background-color: #E0E0E0;
 	padding: .618rem;
