@@ -51,12 +51,13 @@ section.section .lead-in-text {
 }
 /* header */
 section#header {
+	z-index: 3;
 	position: fixed;
     background-color: #F8BBD0;
     width: 100%;
     padding: 1rem;
     height: 77px;
-    box-shadow: 0 5px 13px rgba(0,0,0,.618);
+    box-shadow: 0 5px 13px rgba(0,0,0,.0618);
 }
 section#header img {
 	height: 35px;
@@ -109,7 +110,18 @@ section#services .description {
 	padding: .618rem;
 }
 .project-container {
+	position: relative;
 	background-color: #F5F5F5;
+	transform: scale3d(1,1,1);
+	transition: all 500ms ease-in-out;
+	z-index: 1;
+	filter: grayscale(1);
+}
+.project-container:hover {
+	transform: scale3d(1.2,1.2,1);
+	box-shadow: 0 5px 13px rgba(0,0,0,.1618);
+	z-index:2;
+	filter: none;
 }
 /*certifications*/
 section#certifications {
